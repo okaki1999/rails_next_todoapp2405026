@@ -12,6 +12,7 @@ class TodosController < ApplicationController
 
         render json: @todo
     end
+    
     def create
         @todo = Todo.new(todo_params)
     
